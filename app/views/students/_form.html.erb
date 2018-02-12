@@ -21,6 +21,11 @@
 		<%= form.number_field :age, id: :student_age %>
 	</div>
 
+	<div class="field">
+			<%= form.label 'Email:' %>
+			<%= form.text_field :email, id: :student_email %>
+		</div>
+
 	<br>
 	<div class="actions">
 		<%= form.submit 'Guardar',  class:'btn btn-success' %>
