@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>SecondApp</title>
-		<%= csrf_meta_tags %>
+<head>
+	<title>SecondApp</title>
+	<%= csrf_meta_tags %>
+	
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/solar/bootstrap.min.css" rel="stylesheet" integrity="sha384-Jpv9vxZao0dlyvegpeTxSgc5cczNCOpcV5ihm8RQbrMo263QmC3Sf5HIMBfr+nqx" crossorigin="anonymous">
+	
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-		<link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/solar/bootstrap.min.css" rel="stylesheet" integrity="sha384-Jpv9vxZao0dlyvegpeTxSgc5cczNCOpcV5ihm8RQbrMo263QmC3Sf5HIMBfr+nqx" crossorigin="anonymous">
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href= <%= root_path %>>Inicio</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation" style="">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 		
-		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-	</head>
-
-	<body>
-		<%= yield %>
-	</body>
+		<div class="collapse navbar-collapse" id="navbarColor02">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href= <%= pages_landing_path %>>Landing <span class="sr-only">(current)</span></a>
+				</li>
+				
+			</ul>
+			
+		</div>
+	</nav>
+	
+	<%= yield %>
+</body>
 </html>

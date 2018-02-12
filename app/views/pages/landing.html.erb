@@ -1,0 +1,22 @@
+<h1 class="text-center">Pages#landing</h1>
+
+<table class="table table-hover">
+	<thead>
+		<tr>
+			<th>Nombre</th>
+			<th>Edad</th>
+			<th>Email</th>
+			<th colspan="3"></th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<% @student.each do |student| %>
+		<tr class="table-active">
+			<td><%= student.name %></td>
+			<td><%= student.age %></td>
+			<td><%= student.email %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
