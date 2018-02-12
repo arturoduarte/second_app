@@ -1,5 +1,12 @@
-<h1>New Student</h1>
+<div class="col-md-10 col-xs-12 col-sm-11 center-block">
+	<div class="card gray text-dark large-padding">
+		<h1 class="text-center">Nuevo Estudiante</h1>
+		
+		<%= render 'form', student: @student %>
+	</div>
+</div>
 
-<%= render 'form', student: @student %>
+<div>
+	<%= link_to 'Volver', students_path, class: 'btn btn-secondary'  %>
+</div>
 
-<%= link_to 'Back', students_path %>

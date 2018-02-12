@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>SecondApp</title>
-    <%= csrf_meta_tags %>
+	<head>
+		<title>SecondApp</title>
+		<%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+		<link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/solar/bootstrap.min.css" rel="stylesheet" integrity="sha384-Jpv9vxZao0dlyvegpeTxSgc5cczNCOpcV5ihm8RQbrMo263QmC3Sf5HIMBfr+nqx" crossorigin="anonymous">
+		
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	</head>
 
-  <body>
-    <%= yield %>
-  </body>
+	<body>
+		<%= yield %>
+	</body>
 </html>

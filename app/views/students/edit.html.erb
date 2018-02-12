@@ -1,6 +1,13 @@
-<h1>Editing Student</h1>
+<div class="col-md-10 col-xs-12 col-sm-11 center-block">
+	<div class="card gray text-dark large-padding">
+		
+		<h1>Editar Estudiante</h1>
+		
+		<%= render 'form', student: @student %>
+	</div>
+</div>
 
-<%= render 'form', student: @student %>
-
-<%= link_to 'Show', @student %> |
-<%= link_to 'Back', students_path %>
+<div>
+	<%= link_to 'Mostrar', @student, class: 'btn btn-info' %> |
+	<%= link_to 'Volver', students_path, class: 'btn btn-secondary' %>
+</div>

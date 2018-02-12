@@ -1,14 +1,21 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @student.name %>
-</p>
+<div class="col-md-10 col-xs-12 col-sm-11 center-block">
+	<div class="card gray text-dark large-padding">
 
-<p>
-  <strong>Age:</strong>
-  <%= @student.age %>
-</p>
-
-<%= link_to 'Edit', edit_student_path(@student) %> |
-<%= link_to 'Back', students_path %>
+		<p style="color:white;">
+			<strong>Nombre:</strong>
+			<%= @student.name %>
+		</p>
+		
+		<p style="color:white;">
+			<strong>Edad:</strong>
+			<%= @student.age %>
+		</p>
+		
+		<div>
+			<%= link_to 'Editar', edit_student_path(@student), class: 'btn btn-primary' %> |
+			<%= link_to 'Volver', students_path, class: 'btn btn-secondary' %>
+		</div>
+	</div>
+</div>
